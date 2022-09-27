@@ -1,6 +1,8 @@
 # Madden Player Stats Importer
 
 This program gathers season/career stats from Pro Football Reference/Stathead for use in Madden.
+### Releases
+The current release for this project can be found [here](https://github.com/NoahJele/madden-stats-profootballreference/releases/). It includes the readme file and the exe needed to run the program.
 
 ### The Basics
 
