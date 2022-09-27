@@ -8,5 +8,6 @@ namespace MaddenImporter.Models.Player
         public int ExtraPointsMade { get; set; }
         public int FieldGoalsAttempted { get; set; }
         public int FieldGoalsMade { get; set; }
+        public int PuntsBlocked { get; set; }
     }
 }

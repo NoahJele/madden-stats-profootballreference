@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using MaddenImporter.Models.Player;
 using AngleSharp;
 
+
 namespace MaddenImporter.Core
 {
     public static class Extensions
@@ -67,10 +68,13 @@ namespace MaddenImporter.Core
                 var ok = json.TryGetProperty(valueKeyName, out var value);
                 if (ok) dict.TryAdd(keyName, value);
             }
-
+            
+            TryAddKeyValuePair("Name", "name_display");
             TryAddKeyValuePair("Name", "player");
+            TryAddKeyValuePair("Team", "teams_played_for_career");
             TryAddKeyValuePair("Team", "team");
             TryAddKeyValuePair("Position", "pos");
+            TryAddKeyValuePair("GamesPlayed", "games");
             TryAddKeyValuePair("GamesPlayed", "g");
             TryAddKeyValuePair("GamesStarted", "gs");
             TryAddKeyValuePair("Receptions", "rec");
@@ -110,6 +114,7 @@ namespace MaddenImporter.Core
             TryAddKeyValuePair("Safety", "safety_md");
             TryAddKeyValuePair("PuntAttempts", "punt");
             TryAddKeyValuePair("PuntYards", "punt_yds");
+            TryAddKeyValuePair("PuntsBlocked","punt_blocked");
             TryAddKeyValuePair("FieldGoalsAttempted", "fga");
             TryAddKeyValuePair("FieldGoalsMade", "fgm");
             TryAddKeyValuePair("ExtraPointsAttempted", "xpa");
