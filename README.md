@@ -15,6 +15,7 @@ For career stats, this program pulls from [StatHead](https://stathead.com), and 
 
 1. Use the `-u (username)` and `-p (password)` command-line arguments while running the program; or
 2. Create a file in the root directory called `login.private` with two lines. The first line is your username, and the second line is your password.
+**IMPORTANT!:** When running a career stats pull, ensure that you have [Firefox](https://www.mozilla.org/en-US/firefox/new/) downloaded and have a Firefox tab open.
 
 **The program will not save your username and / or password. You must either create a file or enter the information every time you run the program.**
 
