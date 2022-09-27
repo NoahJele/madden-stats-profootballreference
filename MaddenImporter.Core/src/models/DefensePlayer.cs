@@ -1,7 +1,7 @@
 namespace MaddenImporter.Models.Player
 {
     public class DefensePlayer : Player
-    {//test
+    {
         public float Interceptions { get; set; }
         public int InterceptionYards { get; set; }
         public int InterceptionTouchdowns { get; set; }
